@@ -1,8 +1,4 @@
 var option = {
-    title : {
-        text : 'Asthma Incidence in Different Age Group of Female People',
-        x : 'center'
-    },
     tooltip : {
         trigger: 'item',
         formatter: "{a} <br/>{b} : {c} ({d}%)"

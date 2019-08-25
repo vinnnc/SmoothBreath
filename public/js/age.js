@@ -1,8 +1,4 @@
  var option = {
-    title: {
-      text: 'Rural and Urban Area Age Distribution',
-        x: 'center'
-    },
     tooltip: {
         trigger: 'axis',
         axisPointer: {
@@ -43,5 +39,4 @@
 
 var myChart = echarts.init(document.getElementById('wrap'));
 
-//使用制定的配置项和数据显示图表
 myChart.setOption(option);
