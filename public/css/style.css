@@ -77,10 +77,10 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 0 20px 0;
 }
 
-::-webkit-selection {
-  color: #fff;
-  background: #d1c286;
-}
+/*::-webkit-selection {*/
+/*  color: #fff;*/
+/*  background: #d1c286;*/
+/*}*/
 
 ::-moz-selection {
   color: #fff;
@@ -107,6 +107,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   text-transform: uppercase;
   font-weight: bold;
+  color: #000000;
   font-family: "Montserrat", Arial, sans-serif;
 }
 .nav a {
