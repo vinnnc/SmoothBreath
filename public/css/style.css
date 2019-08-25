@@ -23,6 +23,10 @@ body {
   height:350px;;
 }
 
+#item{
+  height:350px;;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;

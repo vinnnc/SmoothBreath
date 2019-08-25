@@ -1,4 +1,8 @@
  var option = {
+    title: {
+      text: 'Rural and Urban Area Age Distribution',
+        x: 'center'
+    },
     tooltip: {
         trigger: 'axis',
         axisPointer: {
@@ -6,7 +10,8 @@
         }
     },
     legend: {
-        data: ['Rural', 'Urban']
+        data: ['Rural', 'Urban'],
+        x: 'left'
     },
     grid: {
         left: '3%',
