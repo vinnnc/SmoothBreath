@@ -3,7 +3,7 @@ var errorMessage = "Update the variable 'apiKey' with a BreezoMeter API key to s
 
 // Map
 var map = L.map('heatmap', {
-    center: [-36.872419, 144.281713],
+    center: [-37.840935,144.946457],
     zoom: 9,
     minZoom: 3,
 });
