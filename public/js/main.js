@@ -3,12 +3,11 @@
 	'use strict';
 
 	var mobileMenuOutsideClick = function() {
-
 		$(document).click(function (e) {
 	    var container = $("#offcanvas, .js-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 
-	    	if ( $('body').hasClass('offcanvas') ) {
+	    	if ( $('body').hasClass('offcanvas') || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
     			$('body').removeClass('offcanvas');
     			$('.js-nav-toggle').removeClass('active');
