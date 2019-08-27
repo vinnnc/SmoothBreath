@@ -1191,12 +1191,6 @@ h1, h2, h3, h4, h5, h6, figure {
 #footer .copyright .block {
   display: block;
 }
-#heatmap {
-  position: center;
-  height: 400px;
-  width: 100%;
-  z-index: 1;
-}
 #map {
   height: 500px;
   width: 100%;

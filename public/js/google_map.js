@@ -1,49 +1,61 @@
+var map;
 
-var google;
+function initMap() {
+    // Create the map.
+    var pyrmont = {lat: -37.8136, lng: 144.9631};
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: pyrmont,
+        zoom: 17
+    });
 
-function init() {
-    // Basic options for a simple Google Map
-    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    // var myLatlng = new google.maps.LatLng(40.71751, -73.990922);
-    var myLatlng = new google.maps.LatLng(-37.840935, 144.946457);
-    // -37.840935
-    // 144.946457
-    
-    var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
-        zoom: 7,
-
-        // The latitude and longitude to center the map (always required)
-        center: myLatlng,
-
-        // How you would like to style the map. 
-        scrollwheel: false,
-        styles: [{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"hue":"#f49935"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"hue":"#fad959"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#a1cdfc"},{"saturation":30},{"lightness":49}]}]
+    // Create the places service.
+    var service = new google.maps.places.PlacesService(map);
+    var getNextPage = null;
+    var moreButton = document.getElementById('more');
+    moreButton.onclick = function() {
+        moreButton.disabled = true;
+        if (getNextPage) getNextPage();
     };
 
-    
+    // Perform a nearby search.
+    service.nearbySearch(
+        {location: pyrmont, radius: 500, type: ['hospital']},
+        function(results, status, pagination) {
+            if (status !== 'OK') return;
 
-    // Get the HTML DOM element that will contain your map 
-    // We are using a div with id="map" seen below in the <body>
-    var mapElement = document.getElementById('map');
-
-    // Create the Google Map using out element and options defined above
-    var map = new google.maps.Map(mapElement, mapOptions);
-    
-    var addresses = ['Melbourne'];
-
-    for (var x = 0; x < addresses.length; x++) {
-        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
-            var p = data.results[0].geometry.location
-            var latlng = new google.maps.LatLng(p.lat, p.lng);
-            new google.maps.Marker({
-                position: latlng,
-                map: map,
-                icon: 'images/loc.png'
-            });
-
+            createMarkers(results);
+            moreButton.disabled = !pagination.hasNextPage;
+            getNextPage = pagination.hasNextPage && function() {
+                pagination.nextPage();
+            };
         });
-    }
-    
 }
-google.maps.event.addDomListener(window, 'load', init);
+
+function createMarkers(places) {
+    var bounds = new google.maps.LatLngBounds();
+    var placesList = document.getElementById('places');
+
+    for (var i = 0, place; place = places[i]; i++) {
+        var image = {
+            url: place.icon,
+            size: new google.maps.Size(71, 71),
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(17, 34),
+            scaledSize: new google.maps.Size(25, 25)
+        };
+
+        var marker = new google.maps.Marker({
+            map: map,
+            icon: image,
+            title: place.name,
+            position: place.geometry.location
+        });
+
+        var li = document.createElement('li');
+        li.textContent = place.name;
+        placesList.appendChild(li);
+
+        bounds.extend(place.geometry.location);
+    }
+    map.fitBounds(bounds);
+}
