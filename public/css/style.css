@@ -737,7 +737,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #about,
 #contact,
 #footer {
-  padding: 7em 0;
+  padding: 1em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
