@@ -12,7 +12,7 @@
     grid: {
         left: '3%',
         right: '4%',
-        bottom: '3%',
+        bottom: '7%',
         containLabel: true
     },
     xAxis: {
