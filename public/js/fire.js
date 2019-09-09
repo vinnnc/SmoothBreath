@@ -1,5 +1,5 @@
 var request = new XMLHttpRequest();
-request.open('GET','https://api.breezometer.com/pollen/v2/forecast/daily?lat=48.857456&lon=2.354611&days=3&key=b8378ca10c6947cd8e3f6f1047d3a68c',true)
+request.open('GET','https://api.breezometer.com/pollen/v2/forecast/daily?&lat=48.857456&lon=2.354611&features=types_information&key=b8378ca10c6947cd8e3f6f1047d3a68c&days=2&metadata=true')
 request.onload =
     function()
     {
