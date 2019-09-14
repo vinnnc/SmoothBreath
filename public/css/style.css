@@ -17,6 +17,8 @@ body {
   line-height: 1.7;
   color: #828282;
   background: #fff;
+  top:0px!important;
+  min-height: 0px!important;
 }
 
 #map-canvas {
@@ -26,7 +28,9 @@ body {
 .gm-style-iw {
   text-align: center;
 }
-
+.goog-te-banner-frame{
+  display:none
+}
 #wrap{
   height:370px;;
 }
