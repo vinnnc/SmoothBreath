@@ -88,18 +88,10 @@ function onListening() {
 }
 
 /**
- * Create HTTP Server
- */
-let http = require('http');
-http.createServer(app).listen(8080);
-
-/**
  * Redirect HTTP to HTTPS
  */
-app.use(function(req, res, next) {
-  if (req.secure) {
-    next();
-  } else {
-    res.redirect('https://' + req.headers.host + req.url);
-  }
-});
+let http = require('http');
+http.createServer(function(req, res) {
+  res.writeHead('https://' + req.headers.host + req.url);
+  res.end();
+}).listen(8080);
