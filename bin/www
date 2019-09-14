@@ -87,11 +87,15 @@ function onListening() {
   debug('Listening on ' + bind);
 }
 
+
 /**
  * Redirect HTTP to HTTPS
  */
 let http = require('http');
-http.createServer(function(req, res) {
-  res.writeHead('https://' + req.headers.host + req.url);
-  res.end();
-}).listen(8080);
+let httpServer = http.createServer( function(req, res) {
+      res.writeHead('https://' + req.headers.host + req.url);
+    }
+);
+
+// have it listen on 8080
+httpServer.listen(8080);
