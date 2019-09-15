@@ -19,8 +19,7 @@ app.set('port', port);
  */
 let server = https.createServer({
   key: fs.readFileSync('./key.pem'),
-  cert: fs.readFileSync('./cert.pem'),
-  passphrase: 'road2help'
+  cert: fs.readFileSync('./cert.pem')
 }, app);
 
 /**
