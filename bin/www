@@ -5,8 +5,9 @@
  */
 let app = require('../app');
 let debug = require('debug')('smoothbreath:server');
-let https = require('https');
+// let https = require('https');
 let fs = require('fs');
+let http = require('http');
 
 /**
  * Get port from environment and store in Express.
@@ -17,11 +18,11 @@ app.set('port', port);
 /**
  * Create HTTPS server.
  */
-let server = https.createServer({
-  key: fs.readFileSync('./key.pem'),
-  cert: fs.readFileSync('./cert.pem'),
-  passphrase: 'road2help'
-}, app);
+// let server = https.createServer({
+//   key: fs.readFileSync('./key.pem'),
+//   cert: fs.readFileSync('./cert.pem')
+// }, app);
+let server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
@@ -86,16 +87,3 @@ function onListening() {
       : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
-
-
-/**
- * Redirect HTTP to HTTPS
- */
-let http = require('http');
-let httpServer = http.createServer( function(req, res) {
-      res.writeHead('https://' + req.headers.host + req.url);
-    }
-);
-
-// have it listen on 8080
-httpServer.listen(8080);
