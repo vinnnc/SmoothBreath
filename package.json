@@ -10,6 +10,7 @@
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "express-http-to-https": "^1.1.4",
+    "fast-csv": "^3.4.0",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "pug": "^2.0.4"
