@@ -18,14 +18,14 @@ var gradient = [
 ]
 function initMap() {
     map = new google.maps.Map(document.getElementById('pollenMap'), {
-        zoom: 6,
+        zoom:6,
         center: {lat: -37.020100, lng: 144.964600},
     });
 
     heatmap = new google.maps.visualization.HeatmapLayer({
         data: getPoints(),
         map: map,
-        radius: 20,
+        // radius: 10,
         gradient: gradient
     });
 
@@ -40,9 +40,9 @@ function getPoints() {
         {location: new google.maps.LatLng(-35.1913, 142.1444), weight: 6},
         {location: new google.maps.LatLng(-37.2916, 148.3416), weight: 1.5},
 //  new google.maps.LatLng(37.782, -122.437),
-        {location: new google.maps.LatLng(-38.0578, 143.7363), weight: 1.2},
-        {location: new google.maps.LatLng(-37.3016, 148.3416), weight: 1.3},
-        {location: new google.maps.LatLng(-37.2956, 148.3416), weight: 1.5},
-        {location: new google.maps.LatLng(-37.3116, 148.3416), weight: 1.5},
+        {location: new google.maps.LatLng(-37.4066, 149.3511), weight: 1.2},
+        {location: new google.maps.LatLng(-36.9788, 148.1263), weight: 1.3},
+        {location: new google.maps.LatLng(-36.9483, 147.8847), weight: 1.4},
+        {location: new google.maps.LatLng(-37.115, 148.2013), weight: 1.6},
     ];
 }
