@@ -18,6 +18,19 @@
 //     .on("end", function(){
 //         console.log("done");
 //     });
+
+let csv = require('csv-parser');
+let fs = require('fs');
+
+fs.createReadStream('../Files/Englishoak.csv')
+    .pipe(csv())
+    .on('data', (row) => {
+        console.log(row.Latitude + ";" + row.Longitude);
+    })
+    .on('end', () => {
+        console.log('CSV file successfully processed');
+    });
+
 var map, heatmap;
 
 var gradient = [
@@ -36,9 +49,6 @@ var gradient = [
     'rgba(191, 0, 31, 1)',
     'rgba(255, 0, 0, 1)'
 ];
-const csv = require('csv-parser');
-const fs = require('fs');
-var location = [];
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('pollenMap'), {
@@ -47,57 +57,12 @@ function initMap() {
     });
 
     heatmap = new google.maps.visualization.HeatmapLayer({
-        data: location,
+        data: getPoints(),
         map: map,
         radius: 20,
         gradient: gradient
     });
 }
-
-fs.createReadStream('../Files/Englishoak.csv')
-    .pipe(csv())
-    .on('data', (row) => {
-        data.push(row);
-        location.push({location: new google.maps.LatLng(row.Longitude, row.Latitude)});
-        console.log(location);
-    })
-    .on('end', () => {
-        console.log('CSV file successfully processed');
-    });
-
-// console.log(location);
-// var map, heatmap;
-//
-// var gradient = [
-//     'rgba(0, 255, 255, 0)',
-//     'rgba(0, 255, 255, 1)',
-//     'rgba(0, 191, 255, 1)',
-//     'rgba(0, 127, 255, 1)',
-//     'rgba(0, 63, 255, 1)',
-//     'rgba(0, 0, 255, 1)',
-//     'rgba(0, 0, 223, 1)',
-//     'rgba(0, 0, 191, 1)',
-//     'rgba(0, 0, 159, 1)',
-//     'rgba(0, 0, 127, 1)',
-//     'rgba(63, 0, 91, 1)',
-//     'rgba(127, 0, 63, 1)',
-//     'rgba(191, 0, 31, 1)',
-//     'rgba(255, 0, 0, 1)'
-// ];
-
-// function initMap() {
-//     map = new google.maps.Map(document.getElementById('pollenMap'), {
-//         zoom: 6,
-//         center: {lat: -37.020100, lng: 144.964600},
-//     });
-//
-//     heatmap = new google.maps.visualization.HeatmapLayer({
-//         data: location,
-//         map: map,
-//         radius: 20,
-//         gradient: gradient
-//     });
-// }
 
 
 function getPoints() {
