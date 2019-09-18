@@ -67,11 +67,11 @@ function initMap() {
 }
 
 
-// function getPoints() {
-//     for (var i = 0; i < data.length; i++)
-//     {
-//         return [location: new google.maps.LatLng(data[i].)]
-//     }
+function getPoints() {
+    for (var i = 0; i < data.length; i++) {
+        location: new google.maps.LatLng(data[i].Longitude, data[i].Latitude)
+    }
+}
 //     return [
 //         {location: new google.maps.LatLng(-37.5788, 145.693), weight: 0.1},
 // //  new google.maps.LatLng(37.782, -122.445),
