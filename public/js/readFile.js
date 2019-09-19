@@ -1,38 +1,8 @@
-// var fs = require('fs');
-//
-// //create an empty file named mynewfile2.txt:
-// fs.open('./public/Files/Englishoak.csv', 'w', function (err, data) {
-//     if (err) throw err;
-//     var dataArray = data.split(/\r?\n/);
-//     console.log(dataArray);
-// });
-//
-// var csv = require("fast-csv");
-// csv
-//     .fromPath("./public/Files/Englishoak.csv",{headers : true})
-//     .on("data", function(data){
-//         console.log(data);
-//         // { name: 'hou', age: '18' }
-//         // { name: 'wang', age: '13' }
-//     })
-//     .on("end", function(){
-//         console.log("done");
-//     });
-
 let csv = require('csv-parser');
 let fs = require('fs');
-
-fs.createReadStream('../Files/Englishoak.csv')
-    .pipe(csv())
-    .on('data', (row) => {
-        console.log(row.Latitude + ";" + row.Longitude);
-    })
-    .on('end', () => {
-        console.log('CSV file successfully processed');
-    });
-
+var lon = [];
+var lat = [];
 var map, heatmap;
-
 var gradient = [
     'rgba(0, 255, 255, 0)',
     'rgba(0, 255, 255, 1)',
@@ -49,36 +19,29 @@ var gradient = [
     'rgba(191, 0, 31, 1)',
     'rgba(255, 0, 0, 1)'
 ];
+var location = [];
 
-function initMap() {
-    map = new google.maps.Map(document.getElementById('pollenMap'), {
-        zoom: 6,
-        center: {lat: -37.020100, lng: 144.964600},
+fs.createReadStream('../Files/English oak.csv')
+    .pipe(csv())
+    .on('data', (row) => {
+        lat.push(row.Latitude + ',' +  row.Longitude);
+    })
+    .on('end', () => {
+        for (var i = 0; i < lat.length; i++)
+        {
+            location.push('new google.maps.LatLng(' + lat[i] + ')');
+        }
+        map = new google.maps.Map(document.getElementById('pollenMap'), {
+            zoom: 6,
+            center: {lat: -37.020100, lng: 144.964600},
+        });
+
+        heatmap = new google.maps.visualization.HeatmapLayer({
+            data: location,
+            map: map,
+            radius: 20,
+            gradient: gradient
+        });
+        console.log(location);
     });
 
-    heatmap = new google.maps.visualization.HeatmapLayer({
-        data: getPoints(),
-        map: map,
-        radius: 20,
-        gradient: gradient
-    });
-}
-
-
-function getPoints() {
-    for (var i = 0; i < data.length; i++) {
-        location: new google.maps.LatLng(data[i].Longitude, data[i].Latitude)
-    }
-}
-//     return [
-//         {location: new google.maps.LatLng(-37.5788, 145.693), weight: 0.1},
-// //  new google.maps.LatLng(37.782, -122.445),
-//         {location: new google.maps.LatLng(-38.3733, 145.6888), weight: 0.3},
-//         {location: new google.maps.LatLng(-35.1913, 142.1444), weight: 6},
-//         {location: new google.maps.LatLng(-37.2916, 148.3416), weight: 1.5},
-// //  new google.maps.LatLng(37.782, -122.437),
-//         {location: new google.maps.LatLng(-38.0578, 143.7363), weight: 1.2},
-//         {location: new google.maps.LatLng(-37.3016, 148.3416), weight: 1.3},
-//         {location: new google.maps.LatLng(-37.2956, 148.3416), weight: 1.5},
-//         {location: new google.maps.LatLng(-37.3116, 148.3416), weight: 1.5},
-//     ];
