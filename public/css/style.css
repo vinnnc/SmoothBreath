@@ -34,8 +34,12 @@ body {
   background-position: center top;
   -webkit-font-smoothing: antialiased;
   font-family: "Roboto", sans-serif;
+  top:0px!important;
+  min-height: 0px!important;
 }
-
+.goog-te-banner-frame{
+  display:none
+}
 .page-wrapper {
   overflow: hidden;
 }
@@ -220,7 +224,7 @@ li {
 }
 
 .single-page-header {
-  background-image: url("../images/about/about-header.jpg");
+  background-image: url("../images/about/1.jpg");
   background-size: cover;
   padding: 140px 0 70px;
   text-align: center;
@@ -3328,6 +3332,7 @@ li {
     width: 100% !important;
     background: #48bdc5;
     border: 1px solid #ffffff;
+    text-align: right;
     border-top: none;
   }
   .main-menu .navbar-collapse > .navigation > li {

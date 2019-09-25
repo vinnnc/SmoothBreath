@@ -6,7 +6,6 @@
     <link rel="icon" href="images/logo.png" type="image/png">
   <title>Smooth Breath</title>
 
-  
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -24,6 +23,17 @@
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+    <div id="google_translate_element" class="col-md-12 text-right"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en',
+                    layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+                    autoDisplay:false},
+                'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <body>
@@ -32,80 +42,71 @@
       <!-- <div class="preloader"></div> -->
       <!-- Preloader -->
 
-<!--Main Header-->
-<nav class="navbar navbar-default">
-      <div class="container">
+    <!--Main Header-->
+      <nav class="navbar navbar-default">
+          <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="logo col-md-3">
-              <figure>
-                  <a href="index.html">
-                      <img src="images/logo.png" alt="" width="130" height="50">
-                  </a>
-              </figure>
-          </div>
-          <div class="navbar-header col-md-9">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+              <div class="logo col-md-5 col-sm-7 col-xs-6">
+                  <figure>
+                      <a href="index.html">
+                          <img src="images/logo.png" alt="" width="130" height="50">
+                      </a>
+                  </figure>
+              </div>
+              <div class="navbar-header col-md-7 col-sm-5 col-xs-6">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
                       aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-          </div>
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
                   <ul class="nav navbar-nav">
-                        <li class="active">
-                              <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                              <a href="about.html">About</a>
-                        </li>
-                        <li>
-                              <a href="service.html">Service</a>
-                        </li>
-                        <li>
-                              <a href="gallery.html">Gallery</a>
-                        </li>
-                        <li>
-                              <a href="team.html">Team</a>
-                        </li>
-                        <li>
-                              <a href="appointment.html">Appointment</a>
-                        </li>
-                        <li>
-                              <a href="blog.html">Blog</a>
-                        </li>
-                        <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pollen
-                                    <span class="caret"></span>
-                              </a>
-                              <ul class="dropdown-menu">
-                                    <li>
-                                          <a href="#" style="color: #777777">Action</a>
-                                    </li>
-                                    <li>
-                                          <a href="#" style="color: #777777">Another action</a>
-                                    </li>
-                                    <li>
-                                          <a href="#" style="color: #777777">Something else here</a>
-                                    </li>
-                                    <li role="separator" class="divider" ></li>
-                                    <li>
-                                          <a href="#" style="color: #777777">Separated link</a>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-                                    <li>
-                                          <a href="#" style="color: #777777">One more separated link</a>
-                                    </li>
-                              </ul>
-                        </li>
+                      <li class="active">
+                          <a href="index.html">Home</a>
+                      </li>
+                      <li>
+                          <a href="research.html">Research</a>
+                      </li>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trigger
+                              <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li>
+                                  <a href="triggers.html" style="color: #777777">About Trigger</a>
+                              </li>
+                              <li>
+                                  <a href="pollen.html" style="color: #777777">Pollen</a>
+                              </li>
+                              <li>
+                                  <a href="bushfire.html" style="color: #777777">Bushfire</a>
+                              </li>
+<!--                                   <li role="separator" class="divider" >Pets</li>-->
+                              <li>
+                                  <a href="Pets.html" style="color: #777777">Pets</a>
+                              </li>
+<!--                                    <li role="separator" class="divider"></li>-->
+<!--                                    <li>-->
+<!--                                          <a href="#" style="color: #777777">One more separated link</a>-->
+<!--                                    </li>-->
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="gallery.html">Application</a>
+                      </li>
+                      <li>
+                          <a href="single-blog.html">About Us</a>
+                      </li>
                   </ul>
-            </div>
+              </div>
             <!-- /.navbar-collapse -->
-      </div>
+          </div>
       <!-- /.container-fluid -->
-</nav>
+      </nav>
 <!--End Main Header -->
 
 <!--=================================
@@ -165,38 +166,6 @@
 </div>
 
 <!--====  End of Page Slider  ====-->
-
-<!--<section class="cta">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-12">-->
-<!--                <div class="cta-block">-->
-<!--                    <div class="emmergency item">-->
-<!--                        <i class="fa fa-phone"></i>-->
-<!--                        <h2>Emegency Cases</h2>-->
-<!--                        <a href="#">1-800-700-6200</a>-->
-<!--                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>-->
-<!--                    </div>-->
-<!--                    <div class="top-doctor item">-->
-<!--                        <i class="fa fa-stethoscope"></i>-->
-<!--                        <h2>24 Hour Service</h2>-->
-<!--                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dignissimos officia dicta suscipit vel eum</p>-->
-<!--                        <a href="#" class="btn btn-main">Read more</a>-->
-<!--                    </div>-->
-<!--                    <div class="working-time item">-->
-<!--                        <i class="fa fa-hourglass-o"></i>-->
-<!--                        <h2>Working Hours</h2>-->
-<!--                        <ul class="w-hours">-->
-<!--                            <li>Mon - Fri  - <span>8:00 - 17:00</span></li>-->
-<!--                            <li>Mon - Fri  - <span>8:00 - 17:00</span></li>-->
-<!--                            <li>Mon - Fri  - <span>8:00 - 17:00</span></li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
 
 <!--about section-->
 <section class="feature-section section bg-gray">
@@ -470,13 +439,13 @@
             <div class="item">
                 <div class="inner-box">
                     <div class="img_holder">
-                        <a href="service.html">
+                        <a href="Template/service.html">
                             <img src="images/gallery/1.jpg" alt="images" class="img-responsive">
                         </a>
                     </div>
                     <div class="image-content text-center">
                         <span>Better Service At Low Cost</span>
-                        <a href="service.html">
+                        <a href="Template/service.html">
                             <h6>Dormitory</h6>
                         </a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
@@ -486,13 +455,13 @@
             <div class="item">
                 <div class="inner-box">
                     <div class="img_holder">
-                        <a href="service.html">
+                        <a href="Template/service.html">
                             <img src="images/gallery/2.jpg" alt="images" class="img-responsive">
                         </a>
                     </div>
                     <div class="image-content text-center">
                         <span>Better Service At Low Cost</span>
-                        <a href="service.html">
+                        <a href="Template/service.html">
                             <h6>Germs Protection</h6>
                         </a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
@@ -502,13 +471,13 @@
             <div class="item">
                 <div class="inner-box">
                     <div class="img_holder">
-                        <a href="service.html">
+                        <a href="Template/service.html">
                             <img src="images/gallery/3.jpg" alt="images" class="img-responsive">
                         </a>
                     </div>
                     <div class="image-content text-center">
                         <span>Better Service At Low Cost</span>
-                        <a href="service.html">
+                        <a href="Template/service.html">
                             <h6>Psycology</h6>
                         </a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
@@ -518,13 +487,13 @@
             <div class="item">
                 <div class="inner-box">
                     <div class="img_holder">
-                        <a href="service.html">
+                        <a href="Template/service.html">
                             <img src="images/gallery/1.jpg" alt="images" class="img-responsive">
                         </a>
                     </div>
                     <div class="image-content text-center">
                         <span>Better Service At Low Cost</span>
-                        <a href="service.html">
+                        <a href="Template/service.html">
                             <h6>Dormitory</h6>
                         </a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
@@ -534,13 +503,13 @@
             <div class="item">
                 <div class="inner-box">
                     <div class="img_holder">
-                        <a href="service.html">
+                        <a href="Template/service.html">
                             <img src="images/gallery/2.jpg" alt="images" class="img-responsive">
                         </a>
                     </div>
                     <div class="image-content text-center">
                         <span>Better Service At Low Cost</span>
-                        <a href="service.html">
+                        <a href="Template/service.html">
                             <h6>Germs Protection</h6>
                         </a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
@@ -550,13 +519,13 @@
             <div class="item">
                 <div class="inner-box">
                     <div class="img_holder">
-                        <a href="service.html">
+                        <a href="Template/service.html">
                             <img src="images/gallery/3.jpg" alt="images" class="img-responsive">
                         </a>
                     </div>
                     <div class="image-content text-center">
                         <span>Better Service At Low Cost</span>
-                        <a href="service.html">
+                        <a href="Template/service.html">
                             <h6>Psycology</h6>
                         </a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
@@ -572,19 +541,20 @@
 <section class="team-section section">
     <div class="container">
         <div class="section-title text-center">
-            <h3>Our Expert
-                <span>Doctors</span>
+            <h3>Emergency
+                <span>Hospital</span>
             </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, rerum 
-                <br>natus nobis deleniti doloremque minima odit voluptatibus ipsam animi?</p>
+            <p>If asthma is out of control, patient need an emergency call immediately
+            </p>
         </div>
         <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="team-member">
                     <img src="images/team/doctor-2.jpg" alt="doctor" class="img-responsive">
                     <div class="contents text-center">
-                        <h4>Dr. Robert Barrethion</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
+                        <h4>Alfred</h4>
+                        <p>55 Commercial Rd, Melbourne VIC 3004
+                            </br>P:(03) 9076 2000</p>
                         <a href="#" class="btn btn-main">read more</a>
                     </div>
                 </div>
@@ -614,366 +584,144 @@
 </section>
 <!--End team section-->
 
-<!--testimonial-section-->
-<!--<section class="testimonial-section" style="background: url(images/testimonials/1.jpg);">-->
+<!-- Contact Section -->
+<!--<section class="appoinment-section section">-->
 <!--    <div class="container">-->
-<!--        <div class="section-title text-center">-->
-<!--            <h3>What Our-->
-<!--                <span>Patients Says</span>-->
-<!--            </h3>-->
-<!--        </div>-->
-<!--        <div class="testimonial-carousel">-->
-<!--            &lt;!&ndash;Slide Item&ndash;&gt;-->
-<!--            <div class="slide-item">-->
-<!--                <div class="inner-box text-center">-->
-<!--                    <div class="image-box">-->
-<!--                        <figure>-->
-<!--                            <img src="images/testimonials/1.png" alt="">-->
-<!--                        </figure>-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-6 col-sm-12 col-xs-12">-->
+<!--                <div class="accordion-section">-->
+<!--    <div class="section-title">-->
+<!--        <h3>FAQ</h3>-->
+<!--    </div>-->
+<!--    <div class="accordion-holder">-->
+<!--        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">-->
+<!--            <div class="panel panel-default">-->
+<!--                <div class="panel-heading" role="tab" id="headingOne">-->
+<!--                    <h4 class="panel-title">-->
+<!--                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">-->
+<!--                            Why Should I choose Medical Health-->
+<!--                        </a>-->
+<!--                    </h4>-->
+<!--                </div>-->
+<!--                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">-->
+<!--                    <div class="panel-body">-->
+<!--                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,-->
+<!--                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,-->
+<!--                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh-->
+<!--                        helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher-->
+<!--                        vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't-->
+<!--                        heard of them accusamus labore sustainable VHS.-->
 <!--                    </div>-->
-<!--                    <h6>Adam Rose</h6>-->
-<!--                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>-->
 <!--                </div>-->
 <!--            </div>-->
-<!--            &lt;!&ndash;Slide Item&ndash;&gt;-->
-<!--            <div class="slide-item">-->
-<!--                <div class="inner-box text-center">-->
-<!--                    <div class="image-box">-->
-<!--                        <figure>-->
-<!--                            <img src="images/testimonials/2.png" alt="">-->
-<!--                        </figure>-->
+<!--            <div class="panel panel-default">-->
+<!--                <div class="panel-heading" role="tab" id="headingTwo">-->
+<!--                    <h4 class="panel-title">-->
+<!--                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"-->
+<!--                            aria-controls="collapseTwo">-->
+<!--                            What are the Centre’s visiting hours?-->
+<!--                        </a>-->
+<!--                    </h4>-->
+<!--                </div>-->
+<!--                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">-->
+<!--                    <div class="panel-body">-->
+<!--                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,-->
+<!--                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,-->
+<!--                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh-->
+<!--                        helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher-->
+<!--                        vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't-->
+<!--                        heard of them accusamus labore sustainable VHS.-->
 <!--                    </div>-->
-<!--                    <h6>David Warner</h6>-->
-<!--                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>-->
 <!--                </div>-->
 <!--            </div>-->
-<!--            &lt;!&ndash;Slide Item&ndash;&gt;-->
-<!--            <div class="slide-item">-->
-<!--                <div class="inner-box text-center">-->
-<!--                    <div class="image-box">-->
-<!--                        <figure>-->
-<!--                            <img src="images/testimonials/3.png" alt="">-->
-<!--                        </figure>-->
-<!--                    </div>-->
-<!--                    <h6>Amy Adams</h6>-->
-<!--                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>-->
+<!--            <div class="panel panel-default">-->
+<!--                <div class="panel-heading" role="tab" id="headingThree">-->
+<!--                    <h4 class="panel-title">-->
+<!--                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"-->
+<!--                            aria-controls="collapseThree">-->
+<!--                            How many visitors are allowed?-->
+<!--                        </a>-->
+<!--                    </h4>-->
 <!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash;Slide Item&ndash;&gt;-->
-<!--            <div class="slide-item">-->
-<!--                <div class="inner-box text-center">-->
-<!--                    <div class="image-box">-->
-<!--                        <figure>-->
-<!--                            <img src="images/testimonials/1.png" alt="">-->
-<!--                        </figure>-->
+<!--                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">-->
+<!--                    <div class="panel-body">-->
+<!--                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,-->
+<!--                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,-->
+<!--                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh-->
+<!--                        helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher-->
+<!--                        vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't-->
+<!--                        heard of them accusamus labore sustainable VHS.-->
 <!--                    </div>-->
-<!--                    <h6>Adam Rose</h6>-->
-<!--                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash;Slide Item&ndash;&gt;-->
-<!--            <div class="slide-item">-->
-<!--                <div class="inner-box text-center">-->
-<!--                    <div class="image-box">-->
-<!--                        <figure>-->
-<!--                            <img src="images/testimonials/2.png" alt="">-->
-<!--                        </figure>-->
-<!--                    </div>-->
-<!--                    <h6>David Warner</h6>-->
-<!--                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash;Slide Item&ndash;&gt;-->
-<!--            <div class="slide-item">-->
-<!--                <div class="inner-box text-center">-->
-<!--                    <div class="image-box">-->
-<!--                        <figure>-->
-<!--                            <img src="images/testimonials/3.png" alt="">-->
-<!--                        </figure>-->
-<!--                    </div>-->
-<!--                    <h6>Amy Adams</h6>-->
-<!--                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash;Slide Item&ndash;&gt;-->
-<!--            <div class="slide-item">-->
-<!--                <div class="inner-box text-center">-->
-<!--                    <div class="image-box">-->
-<!--                        <figure>-->
-<!--                            <img src="images/testimonials/1.png" alt="">-->
-<!--                        </figure>-->
-<!--                    </div>-->
-<!--                    <h6>Adam Rose</h6>-->
-<!--                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash;Slide Item&ndash;&gt;-->
-<!--            <div class="slide-item">-->
-<!--                <div class="inner-box text-center">-->
-<!--                    <div class="image-box">-->
-<!--                        <figure>-->
-<!--                            <img src="images/testimonials/2.png" alt="">-->
-<!--                        </figure>-->
-<!--                    </div>-->
-<!--                    <h6>David Warner</h6>-->
-<!--                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash;Slide Item&ndash;&gt;-->
-<!--            <div class="slide-item">-->
-<!--                <div class="inner-box text-center">-->
-<!--                    <div class="image-box">-->
-<!--                        <figure>-->
-<!--                            <img src="images/testimonials/3.png" alt="">-->
-<!--                        </figure>-->
-<!--                    </div>-->
-<!--                    <h6>Amy Adams</h6>-->
-<!--                    <p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>-->
 <!--                </div>-->
 <!--            </div>-->
 <!--        </div>-->
 <!--    </div>-->
+<!--</div>-->
+<!--            </div>-->
+<!--            <div class="col-md-6 col-sm-12 col-xs-12">-->
+<!--                <div class="contact-area">-->
+<!--    <div class="section-title">-->
+<!--        <h3>Request-->
+<!--            <span>Appointment</span>-->
+<!--        </h3>-->
+<!--    </div>-->
+<!--    <form name="contact_form" class="default-form contact-form" action="sendmail.php" method="post">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-6 col-sm-12 col-xs-12">-->
+<!--                <div class="form-group">-->
+<!--                    <input type="text" name="Name" placeholder="Name" required="">-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <input type="email" name="Email" placeholder="Email" required="">-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <select name="subject">-->
+<!--                        <option>Departments</option>-->
+<!--                        <option>Diagnostic</option>-->
+<!--                        <option>Psychological</option>-->
+<!--                    </select>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-6 col-sm-12 col-xs-12">-->
+<!--                <div class="form-group">-->
+<!--                    <input type="text" name="Phone" placeholder="Phone" required="">-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <input type="text" name="Date" placeholder="Date" required="" id="datepicker">-->
+<!--                    <i class="fa fa-calendar" aria-hidden="true"></i>-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <select name="subject">-->
+<!--                        <option>Doctor</option>-->
+<!--                        <option>Diagnostic</option>-->
+<!--                        <option>Psychological</option>-->
+<!--                    </select>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-12 col-sm-12 col-xs-12">-->
+<!--                <div class="form-group">-->
+<!--                    <textarea name="form_message" placeholder="Your Message" required=""></textarea>-->
+<!--                </div>-->
+<!--                <div class="form-group text-center">-->
+<!--                    <button type="submit" class="btn-style-one">submit now</button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </form>-->
+<!--</div>                        -->
+<!--            </div>-->
+<!--        </div>                    -->
+<!--    </div>-->
 <!--</section>-->
-<!--End testimonial-section-->
-
-<!-- Contact Section -->
-<section class="appoinment-section section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="accordion-section">
-    <div class="section-title">
-        <h3>FAQ</h3>
-    </div>
-    <div class="accordion-holder">
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Why Should I choose Medical Health
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                        helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                        vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                        heard of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
-                            aria-controls="collapseTwo">
-                            What are the Centre’s visiting hours?
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                    <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                        helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                        vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                        heard of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingThree">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
-                            aria-controls="collapseThree">
-                            How many visitors are allowed?
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                    <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                        helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                        vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                        heard of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="contact-area">
-    <div class="section-title">
-        <h3>Request
-            <span>Appointment</span>
-        </h3>
-    </div>
-    <form name="contact_form" class="default-form contact-form" action="sendmail.php" method="post">
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <input type="text" name="Name" placeholder="Name" required="">
-                </div>
-                <div class="form-group">
-                    <input type="email" name="Email" placeholder="Email" required="">
-                </div>
-                <div class="form-group">
-                    <select name="subject">
-                        <option>Departments</option>
-                        <option>Diagnostic</option>
-                        <option>Psychological</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <input type="text" name="Phone" placeholder="Phone" required="">
-                </div>
-                <div class="form-group">
-                    <input type="text" name="Date" placeholder="Date" required="" id="datepicker">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                </div>
-                <div class="form-group">
-                    <select name="subject">
-                        <option>Doctor</option>
-                        <option>Diagnostic</option>
-                        <option>Psychological</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <textarea name="form_message" placeholder="Your Message" required=""></textarea>
-                </div>
-                <div class="form-group text-center">
-                    <button type="submit" class="btn-style-one">submit now</button>
-                </div>
-            </div>
-        </div>
-    </form>
-</div>                        
-            </div>
-        </div>                    
-    </div>
-</section>
 <!-- End Contact Section -->
 
 <!--footer-main-->
 <footer class="footer-main">
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="about-widget">
-            <div class="footer-logo">
-              <figure>
-                <a href="index.html">
-                  <img src="images/logo-2.png" alt="">
-                </a>
-              </figure>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, temporibus?</p>
-            <ul class="location-link">
-              <li class="item">
-                <i class="fa fa-map-marker"></i>
-                <p>Modamba, NY 80021, United States</p>
-              </li>
-              <li class="item">
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                <a href="#">
-                  <p>Support@medic.com</p>
-                </a>
-              </li>
-              <li class="item">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <p>(88017) +123 4567</p>
-              </li>
-            </ul>
-            <ul class="list-inline social-icons">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <h6>Services</h6>
-          <ul class="menu-link">
-            <li>
-              <a href="#">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Orthopadic Liabilities</a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Dental Clinic</a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Dormamu Clinic</a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Psycological Clinic</a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Gynaecological Clinic</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="social-links">
-            <h6>Recent Posts</h6>
-            <ul>
-              <li class="item">
-                <div class="media">
-                  <div class="media-left">
-                    <a href="#">
-                      <img class="media-object" src="images/blog/post-thumb-small.jpg" alt="post-thumb">
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    <h4 class="media-heading"><a href="#">Post Title</a></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dolorem.</p>
-                  </div>
-                </div>
-              </li>
-              <li class="item">
-                <div class="media">
-                  <div class="media-left">
-                    <a href="#">
-                      <img class="media-object" src="images/blog/post-thumb-small.jpg" alt="post-thumb">
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    <h4 class="media-heading">
-                      <a href="#">Post Title</a>
-                    </h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dolorem.</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="footer-bottom">
     <div class="container clearfix">
       <div class="copyright-text">
-        <p>&copy; Copyright 2018. All Rights Reserved by
-          <a href="index.html">Medic</a>
+        <p>&copy; Copyright 2019. All Rights Reserved by
+          <a href="index.html">Smooth Breath</a>
         </p>
       </div>
       <ul class="footer-bottom-link">
@@ -981,10 +729,10 @@
           <a href="index.html">Home</a>
         </li>
         <li>
-          <a href="about.html">About</a>
+          <a href="Template/about.html">About</a>
         </li>
         <li>
-          <a href="contact.html">Contact</a>
+          <a href="Template/contact.html">Contact</a>
         </li>
       </ul>
     </div>
