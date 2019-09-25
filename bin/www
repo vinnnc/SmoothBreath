@@ -6,12 +6,13 @@
 let app = require('../app');
 let debug = require('debug')('smoothbreath:server');
 let https = require('https');
+let http = require('http');
 let fs = require('fs');
 
 /**
  * Get port from environment and store in Express.
  */
-let port = normalizePort(process.env.PORT || '3000');
+let port = normalizePort(process.env.PORT || '3000' || '8080');
 app.set('port', port);
 
 /**
@@ -22,12 +23,18 @@ let httpsServer = https.createServer({
   cert: fs.readFileSync('./cert.pem')
 }, app);
 
+let httpServer = http.createServer(app);
+
 /**
  * Listen on provided port, on all network interfaces.
  */
 httpsServer.on('error', onError);
 httpsServer.on('listening', onListening);
 httpsServer.listen(port);
+
+httpServer.on('error', onError);
+httpServer.on('listening', onListening);
+httpServer.listen('8080');
 
 /**
  * Normalize a port into a number, string, or false.
