@@ -1007,6 +1007,7 @@ li {
 }
 
 .tab-content {
+  display: block !important;
   position: relative;
   float: left;
   width: 100%;
