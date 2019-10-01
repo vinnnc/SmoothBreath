@@ -17,7 +17,7 @@
     <!-- FancyBox -->
     <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
     <!-- Heatmap -->
-    <link rel="stylesheet" href="css/heatmap.css">
+    <link rel="stylesheet" href="css/overall.css">
     <!-- Stylesheets -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -36,26 +36,24 @@
     </script>
 
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="plugins/jquery.js"></script>
 </head>
 
 <body>
 <div class="page-wrapper">
-    <!-- Preloader -->
-    <!-- <div class="preloader"></div> -->
-    <!-- Preloader -->
 
     <!--Main Header-->
     <nav class="navbar navbar-default">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="logo col-md-3 col-xs-2">
+            <div class="logo col-md-6 col-xs-2">
                 <figure>
                     <a href="index.html">
                         <img src="images/logo.png" alt="" width="130" height="50">
                     </a>
                 </figure>
             </div>
-            <div class="navbar-header col-md-9">
+            <div class="navbar-header col-md-6">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
                         aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -131,29 +129,53 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <!-- Nav tabs -->
                         <div class="tabs">
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation" class="active">
-                                    <a href="#englishOak"  data-toggle="tab">English Oak</a>
+                                    <a id="link1" href="#overall"  data-toggle="tab" onclick="initMap(this)">Overall</a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="#orthopedic" data-toggle="tab">Lemon Bottlebrush</a>
+                                    <a id="link2" href="#englishOak"  data-toggle="tab">English Oak</a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="#sonogram" data-toggle="tab">Lesser Canary-grass</a>
+                                    <a id="link3" href="#lemon" data-toggle="tab">Lemon Bottlebrush</a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="#x-ray" data-toggle="tab">Shade Pellitory</a>
+                                    <a id="link4" href="#lesser" data-toggle="tab">Lesser Canary-grass</a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="#diagnostic" data-toggle="tab">Timothy Grass</a>
+                                    <a id="link5" href="#shade" data-toggle="tab">Shade Pellitory</a>
+                                </li>
+                                <li role="presentation">
+                                    <a id="link6" href="#timothy" data-toggle="tab">Timothy Grass</a>
                                 </li>
                             </ul>
                         </div>
                         <!--Start single tab content-->
                         <div class="tab-content">
-                            <div class="service-box tab-pane fade in active row" id="englishOak">
+                            <div class="service-box tab-pane fade in active" id="overall">
+                                <div class="col-md-12">
+                                    <div class="contents">
+                                        <div class="section-title">
+                                            <h3>overall</h3>
+                                        </div>
+                                        <div class="text">
+                                            <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
+                                                then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                                            <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
+                                                then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                                        </div>
+                                        <ul class="content-list">
+                                            <li>
+                                                <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
+                                            <li>
+                                                <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="service-box tab-pane fade in" id="englishOak">
                                 <div class="col-md-6">
                                     <img class="img-responsive" src="images/EnglishOak.jpg" alt="service-image">
                                 </div>
@@ -172,135 +194,134 @@
                                             <li>
                                                 <i class="fa fa-dot-circle-o"></i>Pollen Calendar: March to May</li>
                                         </ul>
-                                        <a id="englishOakOnBtn" class="btn btn-style-one" >Show Distribution Map</a>
-                                        <a id="englishOakOffBtn" class="btn btn-style-one">Hide Distribution Map</a>
                                     </div>
-                                </div>
-                                <div id="mapRow" class="col-md-12" style="margin: 20px; position: center">
-                                    <script src="js/englishOakMap.js"></script>
-                                    <div class id="pollenMap"></div>
-                                    <script async defer
-                                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARC31UtbBYkaQJ1rOWWa9mk9MV0Zs7zaA&libraries=visualization&callback=initMap">
-                                    </script>
                                 </div>
                             </div>
-                        <!--End single tab content-->
+                            <!--End single tab content-->
+
                             <!--Start single tab content-->
-                            <div class="service-box tab-pane fade in" id="orthopedic">
-                                    <div class="col-md-6">
-                                        <img class="img-responsive" src="images/services/service-two.jpg" alt="service-image">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="contents">
-                                            <div class="section-title">
-                                                <h3>orthopedic</h3>
-                                            </div>
-                                            <div class="text">
-                                                <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
-                                                    then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                                                <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
-                                                    then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                                            </div>
-                                            <ul class="content-list">
-                                                <li>
-                                                    <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental</li>
-                                                <li>
-                                                    <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
-                                                <li>
-                                                    <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
-                                            </ul>
-                                            <a href="#" class="btn btn-style-one">Read more</a>
+                            <div class="service-box tab-pane fade in" id="lemon">
+                                <div class="col-md-6">
+                                    <img class="img-responsive" src="images/lemonBottlebrush.jpg" alt="service-image">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="contents">
+                                        <div class="section-title">
+                                            <h3>Lemon Bottlebrush</h3>
                                         </div>
+                                        <div class="text">
+                                            <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
+                                                then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                                            <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
+                                                then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                                        </div>
+                                        <ul class="content-list">
+                                            <li>
+                                                <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental</li>
+                                            <li>
+                                                <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
+<!--                                            <li>-->
+<!--                                                <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>-->
+                                        </ul>
                                     </div>
                                 </div>
+                            </div>
                                 <!--End single tab content-->
                                 <!--Start single tab content-->
-                                <div class="service-box tab-pane fade in" id="sonogram">
-                                    <div class="col-md-6">
-                                        <img class="img-responsive" src="images/services/service-three.jpg" alt="service-image">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="contents">
-                                            <div class="section-title">
-                                                <h3>sonogram</h3>
-                                            </div>
-                                            <div class="text">
-                                                <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
-                                                    then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                                                <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
-                                                    then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                                            </div>
-                                            <ul class="content-list">
-                                                <li>
-                                                    <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental</li>
-                                                <li>
-                                                    <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
-                                                <li>
-                                                    <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
-                                            </ul>
-                                            <a href="#" class="btn btn-style-one">Read more</a>
+                            <div class="service-box tab-pane fade in" id="lesser">
+                                <div class="col-md-6">
+                                    <img class="img-responsive" src="images/lesser.jpg" alt="service-image">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="contents">
+                                        <div class="section-title">
+                                            <h3>Lesser Canary-grass</h3>
                                         </div>
+                                        <div class="text">
+                                            <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
+                                                then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                                            <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
+                                                then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                                        </div>
+                                        <ul class="content-list">
+                                            <li>
+                                                <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental</li>
+                                            <li>
+                                                <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
+<!--                                            <li>-->
+<!--                                                <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>-->
+                                        </ul>
                                     </div>
                                 </div>
+                            </div>
                                 <!--End single tab content-->
                                 <!--Start single tab content-->
-                                <div class="service-box tab-pane fade in" id="x-ray">
-                                    <div class="col-md-6">
-                                        <img class="img-responsive" src="images/services/service-four.jpg" alt="service-image">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="contents">
-                                            <div class="section-title">
-                                                <h3>x-ray</h3>
-                                            </div>
-                                            <div class="text">
-                                                <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
-                                                    then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                                                <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
-                                                    then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                                            </div>
-                                            <ul class="content-list">
-                                                <li>
-                                                    <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental</li>
-                                                <li>
-                                                    <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
-                                                <li>
-                                                    <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
-                                            </ul>
-                                            <a href="#" class="btn btn-style-one">Read more</a>
+                            <div class="service-box tab-pane fade in" id="shade">
+                                <div class="col-md-6">
+                                    <img class="img-responsive" src="images/shade.jpg" alt="service-image">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="contents">
+                                        <div class="section-title">
+                                            <h3>Shade Pellitory</h3>
                                         </div>
+                                        <div class="text">
+                                            <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
+                                                then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                                            <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
+                                                then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                                        </div>
+                                        <ul class="content-list">
+                                            <li>
+                                                <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental</li>
+                                            <li>
+                                                <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
+<!--                                            <li>-->
+<!--                                                <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>-->
+                                        </ul>
                                     </div>
                                 </div>
+                            </div>
                                 <!--End single tab content-->
                                 <!--Start single tab content-->
-                                <div class="service-box tab-pane fade in" id="diagnostic">
-                                    <div class="col-md-6">
-                                        <img class="img-responsive" src="images/services/service-five.jpg" alt="service-image">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="contents">
-                                            <div class="section-title">
-                                                <h3>diagnostic</h3>
-                                            </div>
-                                            <div class="text">
-                                                <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
-                                                    then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                                                <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
-                                                    then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                                            </div>
-                                            <ul class="content-list">
-                                                <li>
-                                                    <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental</li>
-                                                <li>
-                                                    <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
-                                                <li>
-                                                    <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
-                                            </ul>
-                                            <a href="#" class="btn btn-style-one">Read more</a>
+                            <div class="service-box tab-pane fade in" id="timothy">
+                                <div class="col-md-6">
+                                    <img class="img-responsive" src="images/TimothyGrass.jpg" alt="service-image">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="contents">
+                                        <div class="section-title">
+                                            <h3>Timothy Grass</h3>
                                         </div>
+                                        <div class="text">
+                                            <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
+                                                then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                                            <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic is added.
+                                                then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                                        </div>
+                                        <ul class="content-list">
+                                            <li>
+                                                <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental</li>
+                                            <li>
+                                                <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>
+<!--                                            <li>-->
+<!--                                                <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves</li>-->
+                                        </ul>
                                     </div>
                                 </div>
-                                <!--End single tab content-->
+                            </div>
+                            <!--End single tab content-->
+<!--                            <div class="row" class="col-md-offset-6" style="margin-top: 10px">-->
+<!--                                <a id="onBtn" class="btn btn-style-one" >Show Distribution Map</a>-->
+<!--                                <a id="offBtn" class="btn btn-style-one">Hide Distribution Map</a>-->
+<!--                            </div>-->
+                            <div id="mapRow" class="col-md-12" style="margin-top: 10px">
+                                <script src="js/showMap.js"></script>
+                                <div class id="pollenMap"></div>
+                                <script async defer
+                                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARC31UtbBYkaQJ1rOWWa9mk9MV0Zs7zaA&libraries=visualization&callback=overallMap">
+                                </script>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -333,7 +354,7 @@
     <span class="icon fa fa-angle-up"></span>
 </div>
 
-<script src="plugins/jquery.js"></script>
+<!--<script src="plugins/jquery.js"></script>-->
 <script src="plugins/bootstrap.min.js"></script>
 <script src="plugins/bootstrap-select.min.js"></script>
 <!-- Slick Slider -->
@@ -341,7 +362,6 @@
 <!-- FancyBox -->
 <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
 <!-- Google Map -->
-
 <script src="plugins/validate.js"></script>
 <script src="plugins/wow.js"></script>
 <script src="plugins/jquery-ui.js"></script>

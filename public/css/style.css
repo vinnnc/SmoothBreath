@@ -984,7 +984,7 @@ li {
 
 .tabs .nav-tabs li a {
   text-transform: capitalize;
-  font-size: 20px;
+  font-size: 18px;
   padding: 10px 25px;
   font-weight: 600;
   color: #4d4d4d;
@@ -1007,6 +1007,7 @@ li {
 }
 
 .tab-content {
+  display: block !important;
   position: relative;
   float: left;
   width: 100%;
@@ -2835,7 +2836,7 @@ li {
 
 .page-title .title-text .title-menu li {
   position: relative;
-  color: #48bdc5;
+  color: #94F6FD;
   font-size: 17px;
   display: inline-block;
   line-height: 30px;
