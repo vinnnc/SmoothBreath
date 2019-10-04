@@ -224,7 +224,7 @@ li {
 }
 
 .single-page-header {
-  /*background-image: url("../images/about/1.jpg");*/
+  background-image: url("../images/about/1.jpg");
   background-size: cover;
   padding: 140px 0 70px;
   text-align: center;
@@ -2851,7 +2851,7 @@ li {
 }
 
 .page-title .title-text .title-menu li a:hover {
-  color: #94F6FD;
+  color: #48bdc5;
   transition: all 500ms ease;
 }
 
@@ -3215,7 +3215,7 @@ li {
   .main-header.style-two .logo {
     float: none !important;
     text-align: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   .main-header.style-two .search-box-btn {
     top: 95px !important;
