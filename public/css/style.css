@@ -224,7 +224,7 @@ li {
 }
 
 .single-page-header {
-  background-image: url("../images/about/1.jpg");
+  /*background-image: url("../images/about/1.jpg");*/
   background-size: cover;
   padding: 140px 0 70px;
   text-align: center;
@@ -2851,7 +2851,7 @@ li {
 }
 
 .page-title .title-text .title-menu li a:hover {
-  color: #48bdc5;
+  color: #94F6FD;
   transition: all 500ms ease;
 }
 
