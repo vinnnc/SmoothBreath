@@ -14,7 +14,7 @@ body {
 p {
   font-family: "Source Sans Pro", sans-serif;
   color: #848484;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*=== MEDIA QUERY ===*/
 body {
-  font-size: 15px;
+  font-size: 18px;
   color: #777777;
   line-height: 1.8em;
   font-weight: 400;
@@ -81,7 +81,7 @@ p {
 }
 
 .section-title p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 25px;
   font-weight: 400;
   color: #777777;
@@ -776,7 +776,7 @@ li {
 }
 
 .cta .cta-block .item p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 19px;
 }
 
@@ -899,7 +899,7 @@ li {
 }
 
 .feature-section .image-content .item p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 28px;
 }
 
@@ -942,7 +942,7 @@ li {
 }
 
 .feature-section .contact-info p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 28px;
   font-weight: 600;
   color: #ffffff;
@@ -1067,7 +1067,7 @@ li {
 }
 
 .service-box .text p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 500;
   padding-top: 5px;
@@ -1084,7 +1084,7 @@ li {
 }
 
 .service-box .content-list li {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 500;
   padding: 7px 0px;
@@ -1105,7 +1105,7 @@ li {
 }
 
 .service-section .section-title p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 26px;
   color: #777777;
   font-weight: 400;
@@ -1161,7 +1161,7 @@ li {
 }
 
 .service-section .inner-box .image-content p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 400;
   color: #777777;
@@ -1199,7 +1199,7 @@ li {
 }
 
 .service-two .left-side .section-title p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 26px;
   color: #777777;
   font-weight: 400;
@@ -1342,7 +1342,7 @@ li {
 }
 
 .service-details .left-side .text p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 400;
   color: #777777;
@@ -1376,7 +1376,7 @@ li {
 }
 
 .service-details .left-side .image-text p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 400;
   color: #777777;
@@ -1454,7 +1454,7 @@ li {
 }
 
 .accordion-box .accordion .accord-content p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 400;
   color: #777777;
@@ -1515,7 +1515,7 @@ li {
 }
 
 .service-details .service-testimonials .text p {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 26px;
   color: #777777;
@@ -1574,7 +1574,7 @@ li {
 }
 
 .service-details .contact-text .item p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 400;
   color: #777777;
@@ -1605,7 +1605,7 @@ li {
 }
 
 .service-overview .content-block p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   margin-bottom: 30px;
 }
@@ -1641,7 +1641,7 @@ li {
 }
 
 .team-section .section-title p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 26px;
   color: #777777;
   font-weight: 400;
@@ -1719,7 +1719,7 @@ li {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 18px;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -1783,7 +1783,7 @@ li {
 }
 
 .testimonial-section .inner-box p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   color: #1a1a1a;
@@ -1849,7 +1849,7 @@ li {
 }
 
 .blog-section .content-text p {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   color: #777777;
   line-height: 24px;
@@ -1952,7 +1952,7 @@ li {
 }
 
 .blog-section.style-two .section-title p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 26px;
   color: #777777;
   font-weight: 400;
@@ -2198,7 +2198,7 @@ li {
 }
 
 .blog-section.style-five .content-text p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 28px;
   font-weight: 400;
   padding-top: 20px;
@@ -2230,7 +2230,7 @@ li {
 }
 
 .blog-section.style-five .text-image p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 28px;
   font-weight: 400;
   padding-top: 0px;
@@ -2284,7 +2284,7 @@ li {
 }
 
 .blog-section.style-five .comment p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 400;
   color: #777777;
@@ -2480,7 +2480,7 @@ li {
 }
 
 .about-section .item-holder p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 400;
   color: #777777;
@@ -2527,7 +2527,7 @@ li {
 }
 
 .story .story-content p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 19px;
 }
 
@@ -2652,7 +2652,7 @@ li {
   opacity: 0;
   transition: all .3s ease;
   padding: 30px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 16px;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
