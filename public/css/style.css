@@ -1130,7 +1130,7 @@ li {
   border-radius: 5px 5px 0px 0px;
   box-shadow: 0 0 20px #f1f1f1;
   margin-bottom: 20px;
-  height: 600px;
+  /*height: 600px;*/
 }
 
 .service-section .inner-box .img_holder img {
@@ -1142,7 +1142,7 @@ li {
 .service-section .inner-box .image-content {
   padding: 38px 30px;
   background: #fff;
-  height: 100%;
+  /*height: 100%;*/
 }
 
 .service-section .inner-box .image-content span {
@@ -1164,6 +1164,52 @@ li {
 }
 
 .service-section .inner-box .image-content p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #777777;
+  padding-bottom: 15px;
+}
+
+.service-section .home-inner-box {
+  position: relative;
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 0 0 20px #f1f1f1;
+  margin-bottom: 20px;
+  height: 500px;
+}
+
+.service-section .home-inner-box .img_holder img {
+  width: 100%;
+  border-radius: 5px;
+  height: 250px;
+}
+
+.service-section .home-inner-box .image-content {
+  padding: 38px 30px;
+  background: #fff;
+  height: 100%;
+}
+
+.service-section .home-inner-box .image-content span {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #777777;
+  letter-spacing: .5px;
+}
+
+.service-section .home-inner-box .image-content h6 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #222222;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.service-section .home-inner-box .image-content p {
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
