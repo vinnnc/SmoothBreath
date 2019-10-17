@@ -1130,16 +1130,19 @@ li {
   border-radius: 5px 5px 0px 0px;
   box-shadow: 0 0 20px #f1f1f1;
   margin-bottom: 20px;
+  height: 600px;
 }
 
 .service-section .inner-box .img_holder img {
   width: 100%;
   border-radius: 5px;
+  height: 100%;
 }
 
 .service-section .inner-box .image-content {
   padding: 38px 30px;
   background: #fff;
+  height: 100%;
 }
 
 .service-section .inner-box .image-content span {
