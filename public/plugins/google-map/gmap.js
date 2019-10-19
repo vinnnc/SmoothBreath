@@ -1,6 +1,4 @@
-/**
- * Created by Kausar on 06/10/2016.
- */
+
 window.marker = null;
 
 function initialize() {
